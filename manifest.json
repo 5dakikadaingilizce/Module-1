@@ -1,0 +1,15 @@
+{
+  "name": "5 Dakikada İngilizce - Module 1",
+  "short_name": "Module #1",
+  "start_url": "/Module-1/",
+  "display": "standalone",
+  "background_color": "#0c0118",
+  "theme_color": "#a855f7",
+  "icons": [
+    {
+      "src": "module1logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
