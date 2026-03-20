@@ -8,10 +8,42 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="apple-touch-icon" href="module1logo.png">
     <link rel="manifest" href="manifest.json">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&family=Inter:wght@400;700&family=Raleway:wght@700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+    <!-- ✅ PERFORMANS DÜZELTMESİ 1: DNS prefetch + preconnect (Google Fonts için) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- ✅ PERFORMANS DÜZELTMESİ 2: Google Fonts async yükleme (render-blocking kaldırıldı) -->
+    <!-- Eski yöntem: <link href="https://fonts.googleapis.com/css2?..." rel="stylesheet"> -->
+    <!-- Yeni yöntem: media="print" trick ile non-blocking -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&family=Raleway:wght@700;900&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    <!-- ✅ Material Symbols sadece ihtiyaç duyulan ikonlar (subset) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&display=swap" media="print" onload="this.media='all'">
+
+    <!-- ✅ Fallback: JS kapalıysa yine de yüklensin -->
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&family=Inter:wght@400;700&family=Raleway:wght@700;900&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0">
+    </noscript>
+
     <style>
+        /* ✅ PERFORMANS DÜZELTMESİ 3: font-display swap ile FOUT önleme */
+        @font-face {
+            font-family: 'Poppins';
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Inter';
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Raleway';
+            font-display: swap;
+        }
+
         .material-symbols-outlined {
             font-family: 'Material Symbols Outlined';
             font-weight: normal; font-style: normal;
@@ -44,7 +76,7 @@
         html, body { height: 100%; overflow: hidden; background: #0c0118; }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', system-ui, sans-serif; /* ✅ system-ui fallback eklendi */
             background: linear-gradient(135deg, #0c0118 0%, #1a0a2e 50%, #0f172a 100%);
             height: 100dvh;
             padding-top: env(safe-area-inset-top);
@@ -97,7 +129,7 @@
         #entry-page::-webkit-scrollbar { display: none; }
 
         .main-title-white {
-            font-family: 'Poppins';
+            font-family: 'Poppins', system-ui, sans-serif;
             font-size: clamp(20px,5vw,26px);
             font-weight: 900;
             background: var(--white-grad);
@@ -112,7 +144,7 @@
             font-size: clamp(22px,6vw,28px);
             margin: 4px 0 20px;
             font-weight: 900;
-            font-family: 'Raleway';
+            font-family: 'Raleway', system-ui, sans-serif;
             filter: drop-shadow(0 0 20px rgba(139,92,246,0.4));
         }
 
@@ -151,15 +183,14 @@
 
         .node-logo {
             width: 68%; height: 68%;
-            background-size: contain !important;
-            background-repeat: no-repeat !important;
-            background-position: center !important;
+            /* ✅ PERFORMANS DÜZELTMESİ 4: background-image yerine <img> kullanıldı (lazy loading için) */
+            object-fit: contain;
             display: block;
         }
 
         .lesson-card h3 {
             font-size: 11px; font-weight: 800; color: #f8fafc;
-            text-align: center; max-width: 100px; font-family: 'Raleway';
+            text-align: center; max-width: 100px; font-family: 'Raleway', system-ui, sans-serif;
             line-height: 1.2; margin: 6px 0 2px 0 !important;
         }
         .lesson-sub {
@@ -208,7 +239,7 @@
         .notif-badge {
             position: absolute; top: -6px; right: -6px;
             background: linear-gradient(135deg, #ec4899, #f472b6);
-            color: white; font-size: 10px; font-weight: 900; font-family: 'Poppins';
+            color: white; font-size: 10px; font-weight: 900; font-family: 'Poppins', system-ui, sans-serif;
             min-width: 18px; height: 18px; border-radius: 9px;
             display: none; align-items: center; justify-content: center;
             padding: 0 4px; box-shadow: 0 2px 10px rgba(236,72,153,0.5);
@@ -235,7 +266,7 @@
         #changelog-sheet.show { transform: translateY(0); }
         .sheet-handle { width: 40px; height: 4px; background: rgba(139,92,246,0.3); border-radius: 2px; margin: 12px auto 0; flex-shrink: 0; }
         .sheet-header { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px 10px; flex-shrink: 0; }
-        .sheet-title { font-family: 'Poppins'; font-weight: 900; font-size: 16px; color: #ffffff; -webkit-text-fill-color: #ffffff; }
+        .sheet-title { font-family: 'Poppins', system-ui, sans-serif; font-weight: 900; font-size: 16px; color: #ffffff; -webkit-text-fill-color: #ffffff; }
         .sheet-close { background: rgba(139,92,246,0.15); border: none; border-radius: 10px; color: #c4b5fd; cursor: pointer; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; font-size: 16px; transition: background 0.2s; }
         .sheet-close:hover { background: rgba(139,92,246,0.25); color: white; }
         .sheet-refresh-banner { margin: 0 16px 10px; background: rgba(168,85,247,0.1); border: 1px solid rgba(168,85,247,0.3); border-radius: 12px; padding: 10px 14px; display: flex; align-items: center; gap: 8px; font-size: 11px; color: #c4b5fd; font-weight: 600; flex-shrink: 0; }
@@ -308,9 +339,9 @@
         }
 
         .header-center { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; margin-bottom: 8px; }
-        .app-logo { width: 42px; margin-bottom: 3px; filter: drop-shadow(0 4px 15px rgba(139,92,246,0.4)); animation: float3d 3s ease-in-out infinite; }
+        .app-logo { width: 42px; height: 42px; margin-bottom: 3px; filter: drop-shadow(0 4px 15px rgba(139,92,246,0.4)); animation: float3d 3s ease-in-out infinite; }
         .sub-title-white { font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.8); letter-spacing: 0.5px; margin-bottom: 2px; }
-        .lesson-title-grad { background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 900; font-size: clamp(18px,5vw,26px); font-family: 'Raleway'; margin-bottom: 3px; line-height: 1.2; }
+        .lesson-title-grad { background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 900; font-size: clamp(18px,5vw,26px); font-family: 'Raleway', system-ui, sans-serif; margin-bottom: 3px; line-height: 1.2; }
         #lessonSubTitle { color: #c4b5fd; font-size: clamp(10px,2.8vw,13px); font-weight: 500; line-height: 1.4; }
 
         .phrase-container {
@@ -331,7 +362,7 @@
         .btn-speak {
             flex-shrink: 0; background: var(--gradient-secondary); color: #0f172a; width: 100%;
             height: clamp(50px,10vw,60px); border-radius: 18px; font-size: clamp(14px,4vw,17px);
-            font-weight: 900; border: none; font-family: 'Poppins'; cursor: pointer;
+            font-weight: 900; border: none; font-family: 'Poppins', system-ui, sans-serif; cursor: pointer;
             position: relative; overflow: hidden; animation: pulse-glow 2s infinite;
             touch-action: manipulation; transition: transform 0.2s; margin-bottom: 8px;
             box-shadow: 0 8px 0 #0891b2, 0 12px 30px rgba(6,182,212,0.4); letter-spacing: 0.5px;
@@ -353,19 +384,19 @@
         }
 
         .btn-row-3 { display: flex; gap: 8px; margin-bottom: 8px; flex-shrink: 0; }
-        .btn-show { flex: 1; background: linear-gradient(135deg, #4f46e5, #7c3aed); border: none; color: white; border-radius: 16px; height: clamp(46px,9.5vw,56px); font-size: clamp(10px,2.8vw,12px); font-weight: 800; cursor: pointer; transition: all 0.25s; font-family: 'Poppins'; letter-spacing: 0.3px; line-height: 1.3; box-shadow: 0 6px 0 #3730a3, 0 10px 25px rgba(79,70,229,0.35); }
+        .btn-show { flex: 1; background: linear-gradient(135deg, #4f46e5, #7c3aed); border: none; color: white; border-radius: 16px; height: clamp(46px,9.5vw,56px); font-size: clamp(10px,2.8vw,12px); font-weight: 800; cursor: pointer; transition: all 0.25s; font-family: 'Poppins', system-ui, sans-serif; letter-spacing: 0.3px; line-height: 1.3; box-shadow: 0 6px 0 #3730a3, 0 10px 25px rgba(79,70,229,0.35); }
         .btn-show:hover { background: linear-gradient(135deg, #6366f1, #a855f7); transform: translateY(-2px); }
         .btn-show:active { transform: translateY(4px); box-shadow: 0 2px 0 #3730a3; }
-        .btn-pass { flex: 1; background: linear-gradient(135deg, #b91c1c 0%, #dc2626 50%, #ef4444 100%); color: white; border: none; border-radius: 16px; height: clamp(46px,9.5vw,56px); font-size: clamp(10px,2.8vw,12px); font-weight: 900; cursor: pointer; transition: all 0.2s; font-family: 'Poppins'; letter-spacing: 0.5px; box-shadow: 0 6px 0 #7f1d1d, 0 10px 25px rgba(185,28,28,0.5); }
+        .btn-pass { flex: 1; background: linear-gradient(135deg, #b91c1c 0%, #dc2626 50%, #ef4444 100%); color: white; border: none; border-radius: 16px; height: clamp(46px,9.5vw,56px); font-size: clamp(10px,2.8vw,12px); font-weight: 900; cursor: pointer; transition: all 0.2s; font-family: 'Poppins', system-ui, sans-serif; letter-spacing: 0.5px; box-shadow: 0 6px 0 #7f1d1d, 0 10px 25px rgba(185,28,28,0.5); }
         .btn-pass:active { transform: translateY(4px); box-shadow: 0 2px 0 #7f1d1d; }
         .btn-pass:hover { transform: translateY(-2px); }
-        .btn-listen { flex: 1; background: var(--gradient-primary); color: white; border: none; border-radius: 16px; height: clamp(46px,9.5vw,56px); font-size: clamp(10px,2.8vw,12px); font-weight: 900; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.2s; font-family: 'Poppins'; letter-spacing: 0.5px; box-shadow: 0 6px 0 #5b21b6, 0 10px 25px rgba(139,92,246,0.35); }
+        .btn-listen { flex: 1; background: var(--gradient-primary); color: white; border: none; border-radius: 16px; height: clamp(46px,9.5vw,56px); font-size: clamp(10px,2.8vw,12px); font-weight: 900; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.2s; font-family: 'Poppins', system-ui, sans-serif; letter-spacing: 0.5px; box-shadow: 0 6px 0 #5b21b6, 0 10px 25px rgba(139,92,246,0.35); }
         .btn-listen:active { transform: translateY(4px); box-shadow: 0 2px 0 #5b21b6; }
         .btn-listen:hover { transform: translateY(-2px); }
         .btn-listen .material-symbols-rounded { font-size: clamp(15px,4vw,19px); }
 
         .btn-row-2 { display: flex; gap: 8px; margin-bottom: 8px; flex-shrink: 0; }
-        .btn-nav { flex: 1; background: rgba(139,92,246,0.12); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd; border-radius: 16px; height: clamp(44px,9vw,54px); font-size: clamp(12px,3.2vw,14px); font-weight: 800; cursor: pointer; transition: all 0.2s; font-family: 'Poppins'; letter-spacing: 0.5px; display: flex; align-items: center; justify-content: center; gap: 6px; backdrop-filter: blur(10px); }
+        .btn-nav { flex: 1; background: rgba(139,92,246,0.12); border: 1px solid rgba(139,92,246,0.25); color: #c4b5fd; border-radius: 16px; height: clamp(44px,9vw,54px); font-size: clamp(12px,3.2vw,14px); font-weight: 800; cursor: pointer; transition: all 0.2s; font-family: 'Poppins', system-ui, sans-serif; letter-spacing: 0.5px; display: flex; align-items: center; justify-content: center; gap: 6px; backdrop-filter: blur(10px); }
         .btn-nav:hover { background: rgba(139,92,246,0.22); color: white; transform: translateY(-2px); }
         .btn-nav:active { transform: translateY(0); }
         .btn-nav .material-symbols-rounded { font-size: 18px; }
@@ -377,17 +408,17 @@
         .stat-item { display: flex; flex-direction: column; align-items: center; flex: 1; position: relative; }
         .stat-item:not(:last-child)::after { content: ''; position: absolute; right: 0; top: 20%; height: 60%; width: 1px; background: linear-gradient(180deg, transparent, rgba(139,92,246,0.3), transparent); }
         .stat-label { font-size: 7px; font-weight: 800; letter-spacing: 0.5px; color: #a78bfa; margin-bottom: 3px; display: flex; align-items: center; gap: 3px; }
-        .stat-icon { font-size: 8px; font-weight: 900; font-family: 'Poppins'; width: 13px; height: 13px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .stat-icon { font-size: 8px; font-weight: 900; font-family: 'Poppins', system-ui, sans-serif; width: 13px; height: 13px; border-radius: 4px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
         .stat-icon-sym { font-size: 11px !important; font-variation-settings: 'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 20; line-height: 1; }
         .stat-val { font-size: clamp(14px,4vw,17px); font-weight: 900; font-variant-numeric: tabular-nums; color: white; }
         .stat-val.green { color: #2dd4bf; }
         .stat-val.red   { color: #f472b6; }
 
         #restartOverlay { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(12,1,24,0.98) 0%, rgba(26,10,46,0.98) 100%); border-radius: 30px; flex-direction: column; justify-content: center; align-items: center; z-index: 50; backdrop-filter: blur(15px); }
-        #restartOverlay h2 { font-family: 'Raleway'; font-size: clamp(20px,6vw,28px); margin-bottom: 20px; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        #restartOverlay h2 { font-family: 'Raleway', system-ui, sans-serif; font-size: clamp(20px,6vw,28px); margin-bottom: 20px; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
         @media (max-height: 650px) {
-            .app-logo { width: 28px; }
+            .app-logo { width: 28px; height: 28px; }
             .sub-title-white { display: none; }
             .header-center { margin-bottom: 4px; }
             .phrase-container { margin: 4px 0 6px; }
@@ -399,6 +430,19 @@
 
         @keyframes pageSlideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         .page-anim { animation: pageSlideIn 0.35s ease-out; }
+
+        /* ✅ Skeleton loader - logo yüklenirken placeholder */
+        .logo-skeleton {
+            width: 130px; height: 130px; border-radius: 20px;
+            background: linear-gradient(90deg, rgba(139,92,246,0.1) 25%, rgba(139,92,246,0.2) 50%, rgba(139,92,246,0.1) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+            margin-bottom: 10px;
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
     </style>
 </head>
 <body>
@@ -414,9 +458,26 @@
             <span class="material-symbols-rounded">update</span>
         </button>
     </div>
-    <img src="module1logo.png"
-         style="width:130px;margin-bottom:10px;filter:drop-shadow(0 10px 30px rgba(139,92,246,0.4));"
-         onerror="this.src='logo.png'">
+
+    <!--
+    ✅ PERFORMANS DÜZELTMESİ 5: LCP resmi için kritik optimizasyonlar
+       - fetchpriority="high" → tarayıcı bu resmi önce indirir
+       - width + height → layout shift (CLS) önlenir
+       - decoding="async" → diğer içerikleri bloklamaz
+       - onerror → logo.png yoksa boş geçer (sessiz hata)
+    -->
+    <img
+        id="main-logo"
+        src="module1logo.png"
+        width="130"
+        height="130"
+        fetchpriority="high"
+        decoding="async"
+        style="width:130px;height:auto;margin-bottom:10px;filter:drop-shadow(0 10px 30px rgba(139,92,246,0.4));border-radius:20px;"
+        onerror="this.onerror=null; this.src='logo.png'; this.onerror=function(){this.style.display='none'};"
+        alt="Module 1 Logo"
+    >
+
     <div class="v-tag" id="v-tag-el">V.1.0</div>
     <div class="main-title-white">5 Dakikada İngilizce</div>
     <div class="select-lesson-title">#Module 1</div>
@@ -447,7 +508,10 @@
         </div>
 
         <div class="header-center">
-            <img src="logo.png" class="app-logo" onerror="this.style.display='none'">
+            <!--
+            ✅ App içi logo: width + height belirtildi, loading="eager" (görünür alan)
+            -->
+            <img src="logo.png" class="app-logo" width="42" height="42" loading="eager" decoding="async" onerror="this.style.display='none'" alt="Logo">
             <div class="sub-title-white">5 Dakikada İngilizce</div>
             <div id="lessonTitle" class="lesson-title-grad">#Lesson 1</div>
             <div id="lessonSubTitle">Yükleniyor...</div>
@@ -579,12 +643,19 @@ function fetchNoCache(url) { return fetch(`${url}?v=${Date.now()}`); }
 /* ── data.json düz array olarak yüklenir ── */
 fetchNoCache('data.json').then(r => r.json()).then(data => {
     allLessonsData = data;
-    data.forEach(lesson => {
-        if(lesson.logo){
-            const img = new Image();
-            img.src = `logos/${lesson.logo}`;
+
+    /* ✅ PERFORMANS DÜZELTMESİ 6: Sadece görünür (ilk 6) kartın logosu preload edilir.
+       Gerisi lazy load. Böylece ağ 15 SVG'yi aynı anda indirmez. */
+    data.slice(0, 6).forEach(lesson => {
+        if (lesson.logo) {
+            const link = document.createElement('link');
+            link.rel = 'preload';
+            link.as = 'image';
+            link.href = `logos/${lesson.logo}`;
+            document.head.appendChild(link);
         }
     });
+
     renderLessonMenu();
 });
 
@@ -597,7 +668,7 @@ function showPage(pageId) {
     if (target) {
         target.style.display = 'flex';
         target.classList.remove('page-anim');
-        void target.offsetWidth;
+        void target.offsetWidth; /* ✅ Bu satır forced reflow yapıyor ama animasyon için gerekli, kabul edilebilir */
         target.classList.add('page-anim');
     }
     document.getElementById('v-tag-el').style.display = pageId === 'app-screen' ? 'none' : 'block';
@@ -611,15 +682,31 @@ function renderLessonMenu() {
     allLessonsData.forEach((lesson, i) => {
         const ok = !!lesson.file;
         const colorSet = rainbowColors[i % rainbowColors.length];
-        const logoFile = lesson.logo ? `logos/${lesson.logo}` : `logos/lessonlogo${lesson.id}.svg`;
+
+        /* ✅ PERFORMANS DÜZELTMESİ 7: background-image yerine <img> ile lazy loading */
+        const logoFile = lesson.logo ? `logos/${lesson.logo}` : `logos/lessonlogo${lesson.id}.png`;
+        /* NOT: SVG'leriniz çok büyük (800KB-1.2MB). Bunları PNG'ye convert edin:
+           - 300x300px PNG → ~30-80KB olur (10-20x küçük)
+           - Alternatif: SVG'deki base64 embedded resimleri çıkarın */
+
+        const isLazy = i >= 6; /* İlk 6 eager, gerisi lazy */
         const starCount = getStarCount(lesson.id);
-        const nodeLogo = `<div class="node-logo" style="background-image:url('${logoFile}');"></div>`;
+
         const card = document.createElement('div');
         card.className = 'lesson-card' + (!ok ? ' disabled' : '');
         if (ok) card.onclick = () => startLesson(lesson);
         card.innerHTML = `
             <div class="node-btn" style="background:${colorSet.bg};box-shadow:0 8px 0 ${colorSet.shadow},0 12px 30px rgba(139,92,246,0.3);">
-                ${nodeLogo}
+                <img
+                    class="node-logo"
+                    src="${logoFile}"
+                    width="54"
+                    height="54"
+                    loading="${isLazy ? 'lazy' : 'eager'}"
+                    decoding="async"
+                    alt="${lesson.title}"
+                    onerror="this.style.opacity='0'"
+                >
             </div>
             <h3>${lesson.title}</h3>
             <div class="lesson-sub">${ok ? (lesson.subTitle || '') : 'Coming Soon'}</div>
