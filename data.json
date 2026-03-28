@@ -13,5 +13,7 @@
   { "id": 12, "title": "#Lesson 12", "subTitle": "in / on / at kullanımı",                                                                                "file": "lessons/m1/lesson12.json", "logo": "lessonlogo12.svg" },
   { "id": 13, "title": "#Lesson 13", "subTitle": "PREPOSITIONS EGZERSİZ-1",                                                                               "file": "lessons/m1/lesson13.json", "logo": "lessonlogo13.svg" },
   { "id": 14, "title": "#Lesson 14", "subTitle": "PREPOSITIONS EGZERSİZ-2",                                                                               "file": "lessons/m1/lesson14.json", "logo": "lessonlogo14.svg" },
-  { "id": 15, "title": "#Lesson 15", "subTitle": "PREPOSITIONS EGZERSİZ-3 & Cümle kurma",                                                                 "file": "lessons/m1/lesson15.json", "logo": "lessonlogo15.svg" }
+  { "id": 15, "title": "#Lesson 15", "subTitle": "PREPOSITIONS EGZERSİZ-3 & Cümle kurma",                                                                 "file": "lessons/m1/lesson15.json", "logo": "lessonlogo15.svg" },
+  { "id": 16, "title": "#Lesson 16", "subTitle": "PREPOSITIONS EGZERSİZ-4 & Cümle kurma",                                                                 "file": "lessons/m1/lesson16.json", "logo": "lessonlogo16.svg" },
+  { "id": 18, "title": "#Lesson 18", "subTitle": "ZAMİRLER",                                                                                              "file": "lessons/m1/lesson18.json", "logo": "lessonlogo18.svg" }
 ]
