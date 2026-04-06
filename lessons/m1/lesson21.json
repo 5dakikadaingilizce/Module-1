@@ -1,5 +1,5 @@
 [
-{ "id": 1, "tr": "Oynuyorum.", "en": "I play" },
+  { "id": 1, "tr": "Oynuyorum.", "en": "I play" },
   { "id": 2, "tr": "Oynuyorsun.", "en": "You play" },
   { "id": 3, "tr": "Ali oynuyor.", "en": "Ali plays" },
   { "id": 4, "tr": "Ayşe oynuyor.", "en": "Ayşe plays" },
