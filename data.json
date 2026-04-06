@@ -17,5 +17,6 @@
   { "id": 16, "title": "#Lesson 16", "subTitle": "PREPOSITIONS EGZERSİZ-4 & Cümle kurma",                                                                 "file": "lessons/m1/lesson16.json", "logo": "lessonlogo16.svg" },
   { "id": 18, "title": "#Lesson 18", "subTitle": "ZAMİRLER",                                                                                              "file": "lessons/m1/lesson18.json", "logo": "lessonlogo18.svg" },
   { "id": 19, "title": "#Lesson 19", "subTitle": "Durum Cümleleri Fiil Yoksa ( +,-,?) Yapıları -1",                                                        "file": "lessons/m1/lesson19.json", "logo": "lessonlogo19.svg" },
-  { "id": 20, "title": "#Lesson 20", "subTitle": "Durum Cümleleri Fiil Yoksa ( +,-,?) Yapıları -2",                                                        "file": "lessons/m1/lesson20.json", "logo": "lessonlogo20.svg" }
+  { "id": 20, "title": "#Lesson 20", "subTitle": "Durum Cümleleri Fiil Yoksa ( +,-,?) Yapıları -2",                                                        "file": "lessons/m1/lesson20.json", "logo": "lessonlogo20.svg" },
+  { "id": 21, "title": "#Lesson 21", "subTitle": "FİİL VARSA DURUM NE?",                                                                                   "file": "lessons/m1/lesson21.json", "logo": "lessonlogo21.svg" }
 ]
