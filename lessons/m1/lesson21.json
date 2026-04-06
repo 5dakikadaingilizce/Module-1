@@ -1,4 +1,5 @@
-  { "id": 1, "tr": "Oynuyorum.", "en": "I play" },
+[
+{ "id": 1, "tr": "Oynuyorum.", "en": "I play" },
   { "id": 2, "tr": "Oynuyorsun.", "en": "You play" },
   { "id": 3, "tr": "Ali oynuyor.", "en": "Ali plays" },
   { "id": 4, "tr": "Ayşe oynuyor.", "en": "Ayşe plays" },
@@ -83,3 +84,4 @@
   { "id": 83, "tr": "Ayşe üç bardak çay içmek istiyor.", "en": "Ayşe wants to drink three glasses of tea" },
   { "id": 84, "tr": "Masanın üstündeki kitabı almak istiyorum.", "en": "I want to take the book on the table" },
   { "id": 85, "tr": "Masanın yanındaki kediye süt vermek istiyorum.", "en": "I want to give milk to the cat beside the table" }
+  ]
