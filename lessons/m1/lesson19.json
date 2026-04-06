@@ -206,8 +206,8 @@
 
   { "id": 165, "tr": "Ocak ayında ailemleyim.", "en": "I am with my family in January." },
   { "id": 166, "tr": "Ocak ayında ailemle değilim.", "en": "I am not with my family in January." },
-  { "id": 167, "tr": "Ocak ayında ailemle misin?", "en": "Are you with your family in January?" },
-  { "id": 168, "tr": "Ocak ayında ailemle değil misin?", "en": "Aren't you with your family in January?" },
+  { "id": 167, "tr": "Ocak ayında ailenle misin?", "en": "Are you with your family in January?" },
+  { "id": 168, "tr": "Ocak ayında ailenle değil misin?", "en": "Aren't you with your family in January?" },
 
   { "id": 169, "tr": "Şubat ayında senin köyündeyiz.", "en": "We are in your village in February." },
   { "id": 170, "tr": "Şubat ayında senin köyünde değiliz.", "en": "We aren't in your village in February." },
@@ -249,7 +249,7 @@
   { "id": 199, "tr": "Kasımda Avrupa'dalar mı?", "en": "Are they in Europe in November?" },
   { "id": 200, "tr": "Kasımda Avrupa'da değiller mi?", "en": "Aren't they in Europe in November?" },
 
-  { "id": 201, "tr": "Aralıkta yorgunım.", "en": "I am tired in December." },
+  { "id": 201, "tr": "Aralıkta yorgunum.", "en": "I am tired in December." },
   { "id": 202, "tr": "Aralıkta yorgun değilim.", "en": "I am not tired in December." },
   { "id": 203, "tr": "Aralıkta yorgun musun?", "en": "Are you tired in December?" },
   { "id": 204, "tr": "Aralıkta yorgun değil misin?", "en": "Aren't you tired in December?" },
@@ -279,20 +279,20 @@
   { "id": 223, "tr": "Yeni yılda buradalar mı?", "en": "Are they here in the new year?" },
   { "id": 224, "tr": "Yeni yılda burada değiller mi?", "en": "Aren't they here in the new year?" },
 
-  { "id": 225, "tr": "Ailem bayramda tatilde.", "en": "My family is on holiday in the bayram." },
-  { "id": 226, "tr": "Ailem bayramda tatilde değil.", "en": "My family isn't on holiday in the bayram." },
-  { "id": 227, "tr": "Ailen bayramda tatilde mi?", "en": "Is your family on holiday in the bayram?" },
-  { "id": 228, "tr": "Ailen bayramda tatilde değil mi?", "en": "Isn't your family on holiday in the bayram?" },
+  { "id": 225, "tr": "Ailem bayramda tatilde.", "en": "My family is on holiday on the bayram." },
+  { "id": 226, "tr": "Ailem bayramda tatilde değil.", "en": "My family isn't on holiday on the bayram." },
+  { "id": 227, "tr": "Ailen bayramda tatilde mi?", "en": "Is your family on holiday on the bayram?" },
+  { "id": 228, "tr": "Ailen bayramda tatilde değil mi?", "en": "Isn't your family on holiday on the bayram?" },
 
   { "id": 229, "tr": "Kızım sabahları sinirlidir.", "en": "My daughter is angry in the mornings." },
   { "id": 230, "tr": "Kızım sabahları sinirli değildir.", "en": "My daughter isn't angry in the mornings." },
   { "id": 231, "tr": "Kızın sabahları sinirli midir?", "en": "Is your daughter angry in the mornings?" },
   { "id": 232, "tr": "Kızın sabahları sinirli değil midir?", "en": "Isn't your daughter angry in the mornings?" },
 
-  { "id": 233, "tr": "Müdürüm öğlenleyin toplantıda.", "en": "My manager is in a meeting at noon." },
-  { "id": 234, "tr": "Müdürüm öğlenleyin toplantıda değil.", "en": "My manager isn't in a meeting at noon." },
-  { "id": 235, "tr": "Müdürün öğlenleyin toplantıda mı?", "en": "Is your manager in a meeting at noon?" },
-  { "id": 236, "tr": "Müdürün öğlenleyin toplantıda değil mi?", "en": "Isn't your manager in a meeting at noon?" },
+  { "id": 233, "tr": "Müdürüm öğlenleyin toplantıda.", "en": "My manager is in the meeting at noon." },
+  { "id": 234, "tr": "Müdürüm öğlenleyin toplantıda değil.", "en": "My manager isn't in the meeting at noon." },
+  { "id": 235, "tr": "Müdürün öğlenleyin toplantıda mı?", "en": "Is your manager in the meeting at noon?" },
+  { "id": 236, "tr": "Müdürün öğlenleyin toplantıda değil mi?", "en": "Isn't your manager in the meeting at noon?" },
 
   { "id": 237, "tr": "Öğleden sonra seninleyiz.", "en": "We are with you in the afternoon." },
   { "id": 238, "tr": "Öğleden sonra seninle değiliz.", "en": "We aren't with you in the afternoon." },
