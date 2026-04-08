@@ -322,22 +322,22 @@
   {
     "id": 65,
     "tr": "Sandalyedeki çocuk benim.",
-    "en": "The child on the chair is me."
+    "en": "The child on the chair is mine."
   },
   {
     "id": 66,
-    "tr": "Sandalyedeki çocuk ben değilim.",
-    "en": "The child on the chair isn't me."
+    "tr": "Sandalyedeki çocuk benim değilim.",
+    "en": "The child on the chair isn't mine."
   },
   {
     "id": 67,
-    "tr": "Sandalyedeki çocuk ben miyim?",
-    "en": "Is the child on the chair me?"
+    "tr": "Sandalyedeki çocuk benim mi?",
+    "en": "Is the child on the chair mine?"
   },
   {
     "id": 68,
-    "tr": "Sandalyedeki çocuk ben değil miyim?",
-    "en": "Isn't the child on the chair me?"
+    "tr": "Sandalyedeki çocuk benim değil mi?",
+    "en": "Isn't the child on the chair mine?"
   },
   {
     "id": 69,
@@ -1251,13 +1251,13 @@
   },
   {
     "id": 251,
-    "tr": "Onunla mısım? (Cansız/Hayvan)",
+    "tr": "Onunla mısın? (Cansız/Hayvan)",
     "en": "Are you with it?"
   },
   {
     "id": 252,
     "tr": "Onunla değil miyim? (Cansız/Hayvan)",
-    "en": "Aren't you with it?"
+    "en": "Aren't I with it?"
   },
   {
     "id": 253,
