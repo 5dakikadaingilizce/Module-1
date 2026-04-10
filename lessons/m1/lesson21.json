@@ -251,7 +251,7 @@
 
   { "id": 201, "tr": "Arkadaşlarım benimle hamburger yiyor.", "en": "My friends eat hamburger with me" },
   { "id": 202, "tr": "Arkadaşlarım benimle hamburger yemiyor.", "en": "My friends don't eat hamburger with me" },
-  { "id": 203, "tr": "Arkadaşların seninle hamburger yiyor mu?", "en": "Are your friends eating hamburger with you?" },
+  { "id": 203, "tr": "Arkadaşların seninle hamburger yiyor mu?", "en": "Do your friends eat hamburger with you?" },
   { "id": 204, "tr": "Arkadaşların seninle hamburger yemiyor mu?", "en": "Don't your friends eat hamburger with you?" },
 
   { "id": 205, "tr": "Ayşe her gün saat 7’de uyanıyor.", "en": "Ayşe wakes up at 7 o'clock every day" },
