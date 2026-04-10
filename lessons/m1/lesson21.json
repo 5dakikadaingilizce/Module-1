@@ -261,7 +261,7 @@
 
   { "id": 209, "tr": "Ben her gün saat 11’de uyuyorum.", "en": "I sleep at 11 o'clock every day" },
   { "id": 210, "tr": "Ben her gün saat 11’de uyumuyorum.", "en": "I don't sleep at 11 o'clock every day" },
-  { "id": 211, "tr": "Ben her gün saat 11’de mi uyuyorsun?", "en": "Do I sleep at 11 o'clock every day?" },
+  { "id": 211, "tr": "Ben her gün saat 11’de mi uyuyorum?", "en": "Do I sleep at 11 o'clock every day?" },
   { "id": 212, "tr": "Ben her gün saat 11’de uyumuyor muyum?", "en": "Don't I sleep at 11 o'clock every day?" },
 
   { "id": 213, "tr": "Kedimiz her gün saat 11’de uyuyor.", "en": "Our cat sleeps at 11 o'clock every day" },
