@@ -259,10 +259,10 @@
   { "id": 207, "tr": "Ayşe her gün saat 7’de uyanıyor mu?", "en": "Does Ayşe wake up at 7 o'clock every day?" },
   { "id": 208, "tr": "Ayşe her gün saat 7’de uyanmıyor mu?", "en": "Doesn't Ayşe wake up at 7 o'clock every day?" },
 
-  { "id": 209, "tr": "Ben her gün saat 11’de uyuyorum.", "en": "I sleep at 11 o'clock every day" },
-  { "id": 210, "tr": "Ben her gün saat 11’de uyumuyorum.", "en": "I don't sleep at 11 o'clock every day" },
-  { "id": 211, "tr": "Ben her gün saat 11’de mi uyuyorum?", "en": "Do I sleep at 11 o'clock every day?" },
-  { "id": 212, "tr": "Ben her gün saat 11’de uyumuyor muyum?", "en": "Don't I sleep at 11 o'clock every day?" },
+  { "id": 209, "tr": "Sen her gün saat 11’de uyuyorsun.", "en": "You sleep at 11 o'clock every day" },
+  { "id": 210, "tr": "Sen her gün saat 11’de uyumuyorsun.", "en": "You don't sleep at 11 o'clock every day" },
+  { "id": 211, "tr": "Sen her gün saat 11’de mi uyuyorsun?", "en": "Do you sleep at 11 o'clock every day?" },
+  { "id": 212, "tr": "Sen her gün saat 11’de uyumuyor musun?", "en": "Don't you sleep at 11 o'clock every day?" },
 
   { "id": 213, "tr": "Kedimiz her gün saat 11’de uyuyor.", "en": "Our cat sleeps at 11 o'clock every day" },
   { "id": 214, "tr": "Kedimiz her gün saat 11’de uyumuyor.", "en": "Our cat doesn't sleep at 11 o'clock every day" },
