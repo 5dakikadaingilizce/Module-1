@@ -56,11 +56,11 @@
   { "id": 55, "tr": "Saat beş.", "en": "It's five o'clock." },
 
   
-  { "id": 56, "tr": "Saat sabah üçü otuz geçiyor.", "en": "It's half past three in the morning." },
-  { "id": 57, "tr": "Saat gece on biri on beş geçiyor.", "en": "It's quarter past eleven at night." },
-  { "id": 58, "tr": "Saat sabah dördü yirmi beş geçiyor.", "en": "It's twenty-five past four in the morning." },
-  { "id": 59, "tr": "Saat akşam sekizi otuz geçiyor.", "en": "It's half past eight in the evening." },
-  { "id": 60, "tr": "Saat sabah dokuzu kırk beş geçiyor.", "en": "It's quarter to ten in the morning." },
+  { "id": 56, "tr": "Saat sabah üçü otuz geçiyor.", "en": "It's half past three in the morning.", "alt": ["It's half past three AM"] },
+  { "id": 57, "tr": "Saat gece on biri on beş geçiyor.", "en": "It's quarter past eleven at night." , "alt": ["It's quarter past eleven PM"]},
+  { "id": 58, "tr": "Saat sabah dördü yirmi beş geçiyor.", "en": "It's twenty-five past four in the morning.", "alt": ["It's twenty-five past four AM"] },
+  { "id": 59, "tr": "Saat akşam sekizi otuz geçiyor.", "en": "It's half past eight in the evening.", "alt": ["It's half past eight PM"] },
+  { "id": 60, "tr": "Saat sabah dokuzu kırk beş geçiyor.", "en": "It's quarter to ten in the morning.", "alt": ["It's quarter to ten AM"] },
 
 
   
