@@ -24,5 +24,5 @@
   { "id": 24, "title": "#Lesson 24", "subTitle": "WHY - WHO - WHOSE - WHICH",                                                                               "file": "lessons/m1/lesson24.json", "logo": "lessonlogo24.svg" },
   { "id": 25, "title": "#Lesson 25", "subTitle": "SORU & CEVAP OYUNU",                                                                                       "file": "lessons/m1/lesson25.json", "logo": "lessonlogo25.svg" },
   { "id": 26, "title": "#Lesson 26", "subTitle": "FİİLSİZ CÜMLELER RECAP",                                                                                   "file": "lessons/m1/lesson26.json", "logo": "lessonlogo26.svg" },
-  { "id": 27, "title": "#Lesson 27", "subTitle": ".... RECAP",                                                                                               "file": "lessons/m1/lesson27.json", "logo": "lessonlogo27.svg" }
+  { "id": 27, "title": "#Lesson 27", "subTitle": "FİİLLİ CÜMLELER RECAP",                                                                                    "file": "lessons/m1/lesson27.json", "logo": "lessonlogo27.svg" }
 ]
