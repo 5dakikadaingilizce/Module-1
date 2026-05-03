@@ -25,6 +25,6 @@
   { "id": 25, "title": "#Lesson 25", "subTitle": "SORU & CEVAP OYUNU",                                                                                       "file": "lessons/m1/lesson25.json", "logo": "lessonlogo25.svg" },
   { "id": 26, "title": "#Lesson 26", "subTitle": "FİİLSİZ CÜMLELER RECAP",                                                                                   "file": "lessons/m1/lesson26.json", "logo": "lessonlogo26.svg" },
   { "id": 27, "title": "#Lesson 27", "subTitle": "FİİLLİ CÜMLELER RECAP",                                                                                    "file": "lessons/m1/lesson27.json", "logo": "lessonlogo27.svg" },
-  { "id": 28, "title": "#Lesson 28", "subTitle": "RAKAMLARLA İLGİLİ HERŞEY",                                                                                 "file": "lessons/m1/lesson28.json", "logo": "lessonlogo28.svg" }
-
+  { "id": 28, "title": "#Lesson 28", "subTitle": "RAKAMLARLA İLGİLİ HERŞEY",                                                                                 "file": "lessons/m1/lesson28.json", "logo": "lessonlogo28.svg" },
+  { "id": 31, "title": "#Lesson 31", "subTitle": "ORTAYA KARIŞIK HERŞEY",                                                                                 "file": "lessons/m1/lesson31.json", "logo": "lessonlogo31.svg" }
 ]
