@@ -30,5 +30,5 @@
   { "id": 32, "title": "#Lesson 32", "subTitle": "ORTAYA KARIŞIK-2",                                                                                     "file": "lessons/m1/lesson32.json", "logo": "lessonlogo32.svg" },
   { "id": 33, "title": "#Lesson 33", "subTitle": "ORTAYA KARIŞIK-3",                                                                                     "file": "lessons/m1/lesson33.json", "logo": "lessonlogo33.svg" },
   { "id": 34, "title": "#Lesson 34", "subTitle": "ORTAYA KARIŞIK-4",                                                                                     "file": "lessons/m1/lesson34.json", "logo": "lessonlogo34.svg" },
-  { "id": 35, "title": "#Lesson 35", "subTitle": "ORTAYA KARIŞIK-5",                                                                                     "file": "lessons/m1/lesson35.json", "logo": "lessonlogo35.svg" }
+  { "id": 35, "title": "#Lesson 35", "subTitle": "SINAV ZAMANI",                                                                                     "file": "lessons/m1/lesson35.json", "logo": "lessonlogo35.svg" }
 ]
