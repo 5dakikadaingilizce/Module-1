@@ -28,7 +28,7 @@
   { "id": 28, "title": "#Lesson 28", "subTitle": "RAKAMLARLA İLGİLİ HERŞEY",                                                                                 "file": "lessons/m1/lesson28.json", "logo": "lessonlogo28.svg" },
   { "id": 31, "title": "#Lesson 31", "subTitle": "ORTAYA KARIŞIK-1",                                                                                     "file": "lessons/m1/lesson31.json", "logo": "lessonlogo31.svg" },
   { "id": 32, "title": "#Lesson 32", "subTitle": "ORTAYA KARIŞIK-2",                                                                                     "file": "lessons/m1/lesson32.json", "logo": "lessonlogo32.svg" },
-  { "id": 33, "title": "#Lesson 33", "subTitle": "ORTAYA KARIŞIK-3",                                                                                     "file": "lessons/m1/lesson33.json", "logo": "lessonlogo33.svg" }
-
-  
+  { "id": 33, "title": "#Lesson 33", "subTitle": "ORTAYA KARIŞIK-3",                                                                                     "file": "lessons/m1/lesson33.json", "logo": "lessonlogo33.svg" },
+  { "id": 34, "title": "#Lesson 34", "subTitle": "ORTAYA KARIŞIK-4",                                                                                     "file": "lessons/m1/lesson34.json", "logo": "lessonlogo34.svg" },
+  { "id": 35, "title": "#Lesson 35", "subTitle": "ORTAYA KARIŞIK-5",                                                                                     "file": "lessons/m1/lesson35.json", "logo": "lessonlogo35.svg" }
 ]
